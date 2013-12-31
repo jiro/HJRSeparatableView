@@ -14,6 +14,9 @@
 		4B6190201872A1F3005667EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B61901F1872A1F3005667EF /* AppDelegate.m */; };
 		4B6190221872A1F3005667EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6190211872A1F3005667EF /* Images.xcassets */; };
 		4B6190441872A609005667EF /* HJRSeparableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6190431872A609005667EF /* HJRSeparableView.m */; };
+		4B6190471872C764005667EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6190461872C764005667EF /* Main.storyboard */; };
+		4B61904A1872C7BE005667EF /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6190491872C7BE005667EF /* DemoViewController.m */; };
+		4B61904D1872DC56005667EF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B61904C1872DC56005667EF /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		4B6190211872A1F3005667EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4B6190421872A609005667EF /* HJRSeparableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRSeparableView.h; sourceTree = "<group>"; };
 		4B6190431872A609005667EF /* HJRSeparableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRSeparableView.m; sourceTree = "<group>"; };
+		4B6190461872C764005667EF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4B6190481872C7BE005667EF /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		4B6190491872C7BE005667EF /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		4B61904B1872DC56005667EF /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		4B61904C1872DC56005667EF /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,10 @@
 			children = (
 				4B61901E1872A1F3005667EF /* AppDelegate.h */,
 				4B61901F1872A1F3005667EF /* AppDelegate.m */,
+				4B6190481872C7BE005667EF /* DemoViewController.h */,
+				4B6190491872C7BE005667EF /* DemoViewController.m */,
+				4B61904B1872DC56005667EF /* SettingsViewController.h */,
+				4B61904C1872DC56005667EF /* SettingsViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -105,6 +117,7 @@
 		4B6190401872A56E005667EF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4B6190461872C764005667EF /* Main.storyboard */,
 				4B6190211872A1F3005667EF /* Images.xcassets */,
 			);
 			path = Resources;
@@ -173,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B6190221872A1F3005667EF /* Images.xcassets in Resources */,
+				4B6190471872C764005667EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +199,8 @@
 			files = (
 				4B61901C1872A1F3005667EF /* main.m in Sources */,
 				4B6190441872A609005667EF /* HJRSeparableView.m in Sources */,
+				4B61904D1872DC56005667EF /* SettingsViewController.m in Sources */,
+				4B61904A1872C7BE005667EF /* DemoViewController.m in Sources */,
 				4B6190201872A1F3005667EF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -258,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
