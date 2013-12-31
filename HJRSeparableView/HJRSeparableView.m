@@ -51,9 +51,7 @@
 - (void)commonInit
 {
     _separateMode = HJRSeparableViewSeparateModeTop;
-    _separatorInset = UIEdgeInsetsZero;
     _separatorLineWidth = .5f;
-    _separatorColor = HJRStandardSeparatorGrayColor;
 }
 
 #pragma mark - Getters
@@ -62,6 +60,7 @@
 {
     if (!_separatorView) {
         _separatorView = [[UIView alloc] init];
+        _separatorView.backgroundColor = HJRStandardSeparatorGrayColor;
         [self addSubview:_separatorView];
     }
     return _separatorView;
@@ -94,7 +93,7 @@
 {
     _separatorColor = separatorColor;
 
-    self.separatorView.backgroundColor = _separatorColor;
+    self.separatorView.backgroundColor = _separatorColor ?: HJRStandardSeparatorGrayColor;
     [self.separatorView setNeedsDisplay];
 }
 
@@ -105,7 +104,6 @@
     [super layoutSubviews];
 
     self.separatorView.frame = UIEdgeInsetsInsetRect([self separatorViewFrame], [self adjustedSeparatorInset]);
-    self.separatorView.backgroundColor = self.separatorColor;
 }
 
 - (void)didAddSubview:(UIView *)subview
