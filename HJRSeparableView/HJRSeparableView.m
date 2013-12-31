@@ -108,6 +108,13 @@
     self.separatorView.backgroundColor = self.separatorColor;
 }
 
+- (void)didAddSubview:(UIView *)subview
+{
+    [super didAddSubview:subview];
+
+    [self sendSubviewToBack:self.separatorView];
+}
+
 #pragma mark - Private
 
 - (CGRect)separatorViewFrame
