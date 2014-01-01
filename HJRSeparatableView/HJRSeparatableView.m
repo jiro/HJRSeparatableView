@@ -1,25 +1,25 @@
 //
-//  HJRSeparableView.m
+//  HJRSeparatableView.m
 //
 //  Created by Jiro Nagashima on 12/31/13.
 //  Copyright (c) 2013 Jiro Nagashima. All rights reserved.
 //
-//  https://github.com/hedjirog/HJRSeparableView
+//  https://github.com/hedjirog/HJRSeparatableView
 //
 
-#import "HJRSeparableView.h"
+#import "HJRSeparatableView.h"
 
 #define HJRStandardSeparatorGrayColor [UIColor colorWithRed:200.f/255.f green:199.f/255.f blue:204.f/255.f alpha:1.f]
 
-@interface HJRSeparableView ()
+@interface HJRSeparatableView ()
 
 @property (nonatomic, strong) UIView *separatorView;
 
 @end
 
-@implementation HJRSeparableView
+@implementation HJRSeparatableView
 
-- (instancetype)initWithFrame:(CGRect)frame separateMode:(HJRSeparableViewSeparateMode)separateMode
+- (instancetype)initWithFrame:(CGRect)frame separateMode:(HJRSeparatableViewSeparateMode)separateMode
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -50,7 +50,7 @@
 
 - (void)commonInit
 {
-    _separateMode = HJRSeparableViewSeparateModeTop;
+    _separateMode = HJRSeparatableViewSeparateModeTop;
     _separatorLineWidth = .5f;
 }
 
@@ -68,7 +68,7 @@
 
 #pragma mark - Setters
 
-- (void)setSeparateMode:(HJRSeparableViewSeparateMode)separateMode
+- (void)setSeparateMode:(HJRSeparatableViewSeparateMode)separateMode
 {
     _separateMode = separateMode;
 
@@ -118,7 +118,7 @@
 - (CGRect)separatorViewFrame
 {
     switch (self.separateMode) {
-        case HJRSeparableViewSeparateModeTop:
+        case HJRSeparatableViewSeparateModeTop:
             return (CGRect) {
                 .origin.x = 0,
                 .origin.y = 0,
@@ -126,7 +126,7 @@
                 .size.height = self.separatorLineWidth,
             };
 
-        case HJRSeparableViewSeparateModeBottom:
+        case HJRSeparatableViewSeparateModeBottom:
             return (CGRect) {
                 .origin.x = 0,
                 .origin.y = CGRectGetMaxY(self.bounds) - self.separatorLineWidth,
@@ -134,7 +134,7 @@
                 .size.height = self.separatorLineWidth,
             };
 
-        case HJRSeparableViewSeparateModeLeft:
+        case HJRSeparatableViewSeparateModeLeft:
             return (CGRect) {
                 .origin.x = 0,
                 .origin.y = 0,
@@ -142,7 +142,7 @@
                 .size.height = CGRectGetHeight(self.bounds),
             };
 
-        case HJRSeparableViewSeparateModeRight:
+        case HJRSeparatableViewSeparateModeRight:
             return (CGRect) {
                 .origin.x = CGRectGetMaxX(self.bounds) - self.separatorLineWidth,
                 .origin.y = 0,
@@ -155,8 +155,8 @@
 - (UIEdgeInsets)adjustedSeparatorInset
 {
     switch (self.separateMode) {
-        case HJRSeparableViewSeparateModeTop:
-        case HJRSeparableViewSeparateModeBottom:
+        case HJRSeparatableViewSeparateModeTop:
+        case HJRSeparatableViewSeparateModeBottom:
             return (UIEdgeInsets) {
                 .top = 0,
                 .left = self.separatorInset.left,
@@ -164,8 +164,8 @@
                 .right = self.separatorInset.right,
             };
 
-        case HJRSeparableViewSeparateModeLeft:
-        case HJRSeparableViewSeparateModeRight:
+        case HJRSeparatableViewSeparateModeLeft:
+        case HJRSeparatableViewSeparateModeRight:
             return (UIEdgeInsets) {
                 .top = self.separatorInset.top,
                 .left = 0,

@@ -13,25 +13,25 @@
 		4B61901C1872A1F3005667EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B61901B1872A1F3005667EF /* main.m */; };
 		4B6190201872A1F3005667EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B61901F1872A1F3005667EF /* AppDelegate.m */; };
 		4B6190221872A1F3005667EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6190211872A1F3005667EF /* Images.xcassets */; };
-		4B6190441872A609005667EF /* HJRSeparableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6190431872A609005667EF /* HJRSeparableView.m */; };
+		4B6190441872A609005667EF /* HJRSeparatableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6190431872A609005667EF /* HJRSeparatableView.m */; };
 		4B6190471872C764005667EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6190461872C764005667EF /* Main.storyboard */; };
 		4B61904A1872C7BE005667EF /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6190491872C7BE005667EF /* DemoViewController.m */; };
 		4B61904D1872DC56005667EF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B61904C1872DC56005667EF /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B61900C1872A1F3005667EF /* HJRSeparableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJRSeparableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B61900C1872A1F3005667EF /* HJRSeparatableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJRSeparatableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B61900F1872A1F3005667EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4B6190111872A1F3005667EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4B6190131872A1F3005667EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4B6190171872A1F3005667EF /* HJRSeparableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HJRSeparableView-Info.plist"; sourceTree = "<group>"; };
+		4B6190171872A1F3005667EF /* HJRSeparatableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HJRSeparatableView-Info.plist"; sourceTree = "<group>"; };
 		4B61901B1872A1F3005667EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4B61901D1872A1F3005667EF /* HJRSeparableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HJRSeparableView-Prefix.pch"; sourceTree = "<group>"; };
+		4B61901D1872A1F3005667EF /* HJRSeparatableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HJRSeparatableView-Prefix.pch"; sourceTree = "<group>"; };
 		4B61901E1872A1F3005667EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4B61901F1872A1F3005667EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4B6190211872A1F3005667EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4B6190421872A609005667EF /* HJRSeparableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRSeparableView.h; sourceTree = "<group>"; };
-		4B6190431872A609005667EF /* HJRSeparableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRSeparableView.m; sourceTree = "<group>"; };
+		4B6190421872A609005667EF /* HJRSeparatableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRSeparatableView.h; sourceTree = "<group>"; };
+		4B6190431872A609005667EF /* HJRSeparatableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRSeparatableView.m; sourceTree = "<group>"; };
 		4B6190461872C764005667EF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4B6190481872C7BE005667EF /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		4B6190491872C7BE005667EF /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				4B6190151872A1F3005667EF /* Demo */,
-				4B6190451872A60F005667EF /* HJRSeparableView */,
+				4B6190451872A60F005667EF /* HJRSeparatableView */,
 				4B61900E1872A1F3005667EF /* Frameworks */,
 				4B61900D1872A1F3005667EF /* Products */,
 			);
@@ -66,7 +66,7 @@
 		4B61900D1872A1F3005667EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B61900C1872A1F3005667EF /* HJRSeparableView.app */,
+				4B61900C1872A1F3005667EF /* HJRSeparatableView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +94,8 @@
 		4B6190161872A1F3005667EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4B6190171872A1F3005667EF /* HJRSeparableView-Info.plist */,
-				4B61901D1872A1F3005667EF /* HJRSeparableView-Prefix.pch */,
+				4B6190171872A1F3005667EF /* HJRSeparatableView-Info.plist */,
+				4B61901D1872A1F3005667EF /* HJRSeparatableView-Prefix.pch */,
 				4B61901B1872A1F3005667EF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -123,22 +123,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4B6190451872A60F005667EF /* HJRSeparableView */ = {
+		4B6190451872A60F005667EF /* HJRSeparatableView */ = {
 			isa = PBXGroup;
 			children = (
-				4B6190421872A609005667EF /* HJRSeparableView.h */,
-				4B6190431872A609005667EF /* HJRSeparableView.m */,
+				4B6190421872A609005667EF /* HJRSeparatableView.h */,
+				4B6190431872A609005667EF /* HJRSeparatableView.m */,
 			);
-			name = HJRSeparableView;
-			path = ../HJRSeparableView;
+			name = HJRSeparatableView;
+			path = ../HJRSeparatableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B61900B1872A1F3005667EF /* HJRSeparableView */ = {
+		4B61900B1872A1F3005667EF /* HJRSeparatableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B6190381872A1F4005667EF /* Build configuration list for PBXNativeTarget "HJRSeparableView" */;
+			buildConfigurationList = 4B6190381872A1F4005667EF /* Build configuration list for PBXNativeTarget "HJRSeparatableView" */;
 			buildPhases = (
 				4B6190081872A1F3005667EF /* Sources */,
 				4B6190091872A1F3005667EF /* Frameworks */,
@@ -148,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = HJRSeparableView;
+			name = HJRSeparatableView;
 			productName = HJRSeparableView;
-			productReference = 4B61900C1872A1F3005667EF /* HJRSeparableView.app */;
+			productReference = 4B61900C1872A1F3005667EF /* HJRSeparatableView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +163,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jiro Nagashima";
 			};
-			buildConfigurationList = 4B6190071872A1F3005667EF /* Build configuration list for PBXProject "HJRSeparableView" */;
+			buildConfigurationList = 4B6190071872A1F3005667EF /* Build configuration list for PBXProject "HJRSeparatableView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -175,7 +175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B61900B1872A1F3005667EF /* HJRSeparableView */,
+				4B61900B1872A1F3005667EF /* HJRSeparatableView */,
 			);
 		};
 /* End PBXProject section */
@@ -198,7 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B61901C1872A1F3005667EF /* main.m in Sources */,
-				4B6190441872A609005667EF /* HJRSeparableView.m in Sources */,
+				4B6190441872A609005667EF /* HJRSeparatableView.m in Sources */,
 				4B61904D1872DC56005667EF /* SettingsViewController.m in Sources */,
 				4B61904A1872C7BE005667EF /* DemoViewController.m in Sources */,
 				4B6190201872A1F3005667EF /* AppDelegate.m in Sources */,
@@ -286,9 +286,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HJRSeparableView-Prefix.pch";
-				INFOPLIST_FILE = "HJRSeparableView-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "HJRSeparatableView-Prefix.pch";
+				INFOPLIST_FILE = "HJRSeparatableView-Info.plist";
+				PRODUCT_NAME = HJRSeparatableView;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -299,9 +299,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HJRSeparableView-Prefix.pch";
-				INFOPLIST_FILE = "HJRSeparableView-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "HJRSeparatableView-Prefix.pch";
+				INFOPLIST_FILE = "HJRSeparatableView-Info.plist";
+				PRODUCT_NAME = HJRSeparatableView;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -309,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B6190071872A1F3005667EF /* Build configuration list for PBXProject "HJRSeparableView" */ = {
+		4B6190071872A1F3005667EF /* Build configuration list for PBXProject "HJRSeparatableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B6190361872A1F4005667EF /* Debug */,
@@ -318,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B6190381872A1F4005667EF /* Build configuration list for PBXNativeTarget "HJRSeparableView" */ = {
+		4B6190381872A1F4005667EF /* Build configuration list for PBXNativeTarget "HJRSeparatableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B6190391872A1F4005667EF /* Debug */,

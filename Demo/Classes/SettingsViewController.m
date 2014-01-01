@@ -1,13 +1,13 @@
 //
 //  SettingsViewController.m
-//  HJRSeparableView
+//  HJRSeparatableView
 //
 //  Created by Jiro Nagashima on 12/31/13.
 //  Copyright (c) 2013 Jiro Nagashima. All rights reserved.
 //
 
 #import "SettingsViewController.h"
-#import "HJRSeparableView.h"
+#import "HJRSeparatableView.h"
 
 @interface SettingsViewController ()
 
@@ -38,36 +38,36 @@
 {
     [super viewDidLoad];
 
-    if (self.separableView.separateMode == HJRSeparableViewSeparateModeTop) {
+    if (self.separatableView.separateMode == HJRSeparatableViewSeparateModeTop) {
         self.separateModeSegmentedControl.selectedSegmentIndex = 0;
     }
-    else if (self.separableView.separateMode == HJRSeparableViewSeparateModeBottom) {
+    else if (self.separatableView.separateMode == HJRSeparatableViewSeparateModeBottom) {
         self.separateModeSegmentedControl.selectedSegmentIndex = 1;
     }
-    else if (self.separableView.separateMode == HJRSeparableViewSeparateModeLeft) {
+    else if (self.separatableView.separateMode == HJRSeparatableViewSeparateModeLeft) {
         self.separateModeSegmentedControl.selectedSegmentIndex = 2;
     }
-    else if (self.separableView.separateMode == HJRSeparableViewSeparateModeRight) {
+    else if (self.separatableView.separateMode == HJRSeparatableViewSeparateModeRight) {
         self.separateModeSegmentedControl.selectedSegmentIndex = 3;
     }
 
-    self.lineWidthStepper.maximumValue = CGRectGetHeight(self.separableView.bounds);
-    self.topInsetStepper.maximumValue = CGRectGetHeight(self.separableView.bounds);
-    self.bottomInsetStepper.maximumValue = CGRectGetHeight(self.separableView.bounds);
-    self.leftInsetStepper.maximumValue = CGRectGetWidth(self.separableView.bounds);
-    self.rightInsetStepper.maximumValue = CGRectGetWidth(self.separableView.bounds);
+    self.lineWidthStepper.maximumValue = CGRectGetHeight(self.separatableView.bounds);
+    self.topInsetStepper.maximumValue = CGRectGetHeight(self.separatableView.bounds);
+    self.bottomInsetStepper.maximumValue = CGRectGetHeight(self.separatableView.bounds);
+    self.leftInsetStepper.maximumValue = CGRectGetWidth(self.separatableView.bounds);
+    self.rightInsetStepper.maximumValue = CGRectGetWidth(self.separatableView.bounds);
 
-    self.lineWidthStepper.value = self.separableView.separatorLineWidth;
-    self.topInsetStepper.value = self.separableView.separatorInset.top;
-    self.bottomInsetStepper.value = self.separableView.separatorInset.bottom;
-    self.leftInsetStepper.value = self.separableView.separatorInset.left;
-    self.rightInsetStepper.value = self.separableView.separatorInset.right;
+    self.lineWidthStepper.value = self.separatableView.separatorLineWidth;
+    self.topInsetStepper.value = self.separatableView.separatorInset.top;
+    self.bottomInsetStepper.value = self.separatableView.separatorInset.bottom;
+    self.leftInsetStepper.value = self.separatableView.separatorInset.left;
+    self.rightInsetStepper.value = self.separatableView.separatorInset.right;
 
-    self.lineWidthLabel.text = [@(self.separableView.separatorLineWidth) stringValue];
-    self.topInsetLabel.text = [@(self.separableView.separatorInset.top) stringValue];
-    self.bottomInsetLabel.text = [@(self.separableView.separatorInset.bottom) stringValue];
-    self.leftInsetLabel.text = [@(self.separableView.separatorInset.left) stringValue];
-    self.rightInsetLabel.text = [@(self.separableView.separatorInset.right) stringValue];
+    self.lineWidthLabel.text = [@(self.separatableView.separatorLineWidth) stringValue];
+    self.topInsetLabel.text = [@(self.separatableView.separatorInset.top) stringValue];
+    self.bottomInsetLabel.text = [@(self.separatableView.separatorInset.bottom) stringValue];
+    self.leftInsetLabel.text = [@(self.separatableView.separatorInset.left) stringValue];
+    self.rightInsetLabel.text = [@(self.separatableView.separatorInset.right) stringValue];
 }
 
 #pragma mark - Actions
@@ -75,58 +75,58 @@
 - (IBAction)changeSeparateMode:(UISegmentedControl *)segmentedControl
 {
     if (segmentedControl.selectedSegmentIndex == 0) {
-        self.separableView.separateMode = HJRSeparableViewSeparateModeTop;
+        self.separatableView.separateMode = HJRSeparatableViewSeparateModeTop;
     }
     if (segmentedControl.selectedSegmentIndex == 1) {
-        self.separableView.separateMode = HJRSeparableViewSeparateModeBottom;
+        self.separatableView.separateMode = HJRSeparatableViewSeparateModeBottom;
     }
     if (segmentedControl.selectedSegmentIndex == 2) {
-        self.separableView.separateMode = HJRSeparableViewSeparateModeLeft;
+        self.separatableView.separateMode = HJRSeparatableViewSeparateModeLeft;
     }
     if (segmentedControl.selectedSegmentIndex == 3) {
-        self.separableView.separateMode = HJRSeparableViewSeparateModeRight;
+        self.separatableView.separateMode = HJRSeparatableViewSeparateModeRight;
     }
 }
 
 - (IBAction)changeLineWidth:(UIStepper *)stepper
 {
-    self.separableView.separatorLineWidth = stepper.value;
+    self.separatableView.separatorLineWidth = stepper.value;
 
     self.lineWidthLabel.text = [@(stepper.value) stringValue];
 }
 
 - (IBAction)changeTopInset:(UIStepper *)stepper
 {
-    UIEdgeInsets separatorInset = self.separableView.separatorInset;
+    UIEdgeInsets separatorInset = self.separatableView.separatorInset;
     separatorInset.top = stepper.value;
-    self.separableView.separatorInset = separatorInset;
+    self.separatableView.separatorInset = separatorInset;
 
     self.topInsetLabel.text = [@(stepper.value) stringValue];
 }
 
 - (IBAction)changeBottomInset:(UIStepper *)stepper
 {
-    UIEdgeInsets separatorInset = self.separableView.separatorInset;
+    UIEdgeInsets separatorInset = self.separatableView.separatorInset;
     separatorInset.bottom = stepper.value;
-    self.separableView.separatorInset = separatorInset;
+    self.separatableView.separatorInset = separatorInset;
 
     self.bottomInsetLabel.text = [@(stepper.value) stringValue];
 }
 
 - (IBAction)changeLeftInset:(UIStepper *)stepper
 {
-    UIEdgeInsets separatorInset = self.separableView.separatorInset;
+    UIEdgeInsets separatorInset = self.separatableView.separatorInset;
     separatorInset.left = stepper.value;
-    self.separableView.separatorInset = separatorInset;
+    self.separatableView.separatorInset = separatorInset;
 
     self.leftInsetLabel.text = [@(stepper.value) stringValue];
 }
 
 - (IBAction)changeRightInset:(UIStepper *)stepper
 {
-    UIEdgeInsets separatorInset = self.separableView.separatorInset;
+    UIEdgeInsets separatorInset = self.separatableView.separatorInset;
     separatorInset.right = stepper.value;
-    self.separableView.separatorInset = separatorInset;
+    self.separatableView.separatorInset = separatorInset;
 
     self.rightInsetLabel.text = [@(stepper.value) stringValue];
 }

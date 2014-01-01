@@ -1,6 +1,6 @@
 //
 //  DemoViewController.m
-//  HJRSeparableView
+//  HJRSeparatableView
 //
 //  Created by Jiro Nagashima on 12/31/13.
 //  Copyright (c) 2013 Jiro Nagashima. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import "DemoViewController.h"
 #import "SettingsViewController.h"
-#import "HJRSeparableView.h"
+#import "HJRSeparatableView.h"
 
 @interface DemoViewController ()
 
-@property (weak, nonatomic) IBOutlet HJRSeparableView *separableView;
+@property (weak, nonatomic) IBOutlet HJRSeparatableView *separatableView;
 
 @end
 
@@ -22,7 +22,7 @@
 {
     if ([segue.identifier isEqualToString:@"PushSettings"]) {
         SettingsViewController *viewController = segue.destinationViewController;
-        viewController.separableView = self.separableView;
+        viewController.separatableView = self.separatableView;
     }
 }
 
