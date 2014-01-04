@@ -20,9 +20,9 @@ typedef NS_ENUM(NSInteger, HJRSeparatableViewSeparateMode) {
 
 - (instancetype)initWithFrame:(CGRect)frame separateMode:(HJRSeparatableViewSeparateMode)separateMode;
 
-@property (nonatomic) HJRSeparatableViewSeparateMode separateMode;    // default is HJRSeparableViewSeparateModeTop
-@property (nonatomic) UIEdgeInsets separatorInset;  // allows customization of the frame of separators
-@property (nonatomic) CGFloat separatorLineWidth;   // default = 0.5
-@property (nonatomic, strong) UIColor *separatorColor;  // default is the standard separator gray
+@property (nonatomic, assign) HJRSeparatableViewSeparateMode separateMode UI_APPEARANCE_SELECTOR; // default is HJRSeparableViewSeparateModeTop
+@property (nonatomic, assign) UIEdgeInsets separatorInset UI_APPEARANCE_SELECTOR; // allows customization of the frame of separators
+@property (nonatomic, assign) CGFloat separatorLineWidth UI_APPEARANCE_SELECTOR; // default = 0.5
+@property (nonatomic, strong) UIColor *separatorColor UI_APPEARANCE_SELECTOR; // default is the standard separator gray
 
 @end
