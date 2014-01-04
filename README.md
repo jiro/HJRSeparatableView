@@ -1,9 +1,14 @@
-HJRSeparatableView
+HJRSeparatableView ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 ================
+
+[![Cocoapods](https://cocoapod-badges.herokuapp.com/v/HJRSeparatableView/badge.png)](http://cocoapods.org/?q=HJRSeparatableView)
+[![Cocoapods](https://cocoapod-badges.herokuapp.com/p/HJRSeparatableView/badge.png)](http://cocoapods.org/?q=HJRSeparatableView)
 
 **An extended view with a single line separator like `UITableViewCell`.**
 
-<p align="center"><img title="Demo" src="https://raw.github.com/hedjirog/HJRSeparatableView/master/Demo/Resources/Demo.gif"/></p>
+<p align="center">
+  <img title="Demo" src="https://raw.github.com/hedjirog/HJRSeparatableView/master/Demo/Resources/Demo.gif"/>
+</p>
 
 `HJRSeparatableView` includes properties:
 
